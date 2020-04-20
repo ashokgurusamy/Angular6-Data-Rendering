@@ -2,7 +2,6 @@
 <span>How many rows you want to show?</span> &nbsp;
 <input
   type="number"
-  name="myInput"
   placeholder="Enter the Row value"
   [(ngModel)]="rowsPerPage"
 />
@@ -54,24 +53,6 @@
     class="navigation"
   ></pagination-controls>
 </div>
-
-<!-- <h1>hi {{ datas }}</h1>
-
-<ul class="navbar-nav ml-auto">
-  <li class="nav-item" *ngFor="let menu of mainmenu">
-    <a class="nav-link" href="{{ menu.email }}"
-      >{{ menu.name }} {{ menu.email }}</a
-    >
-    <ul class="sub_menu" *ngIf="menu.children && menu.children.length > 0">
-      <li *ngFor="let sub_menu of menu.children">
-        <a class="nav-link" href="{{ sub_menu.email }}"
-          ><img src="{{ sub_menu.city }}" class="nav-img" />
-          {{ sub_menu.status }}</a
-        >
-      </li>
-    </ul>
-  </li>
-</ul> -->
 
 <script>
   $(".pane-hScroll").scroll(function() {
