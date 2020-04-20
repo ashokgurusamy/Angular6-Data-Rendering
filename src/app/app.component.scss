@@ -1,0 +1,83 @@
+$font-stack: "Open Sans", sans-serif;
+
+* {
+  box-sizing: border-box;
+  font-family: $font-stack;
+}
+.pane.pane--table1 {
+  margin-top: 2rem;
+}
+table {
+  border-collapse: collapse;
+  background: white;
+  table-layout: fixed;
+  width: 100%;
+  th,
+  td {
+    padding: 12px 16px;
+    border: 1px solid #ddd;
+    width: 160px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-weight: 400;
+    cursor: pointer;
+  }
+  th {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  tr:nth-child(even) {
+    background-color: #bbc7ca;
+    color: #000;
+  }
+  button {
+    background-color: #2a52e2;
+    border: 0;
+    border-radius: 4px;
+    color: #fff;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+}
+#users {
+  background: #6baece;
+  color: #fff;
+  text-transform: capitalize;
+}
+
+.pane {
+  background: #eee;
+}
+.pane-hScroll {
+  overflow: auto;
+}
+.pane-vScroll {
+  max-height: 55vh;
+}
+
+.pane--table2 {
+  width: 400px;
+  overflow-x: scroll;
+}
+.pane--table2 th,
+.pane--table2 td {
+  width: auto;
+  min-width: 160px;
+}
+.pane--table2 tbody {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  display: block;
+  height: 65vh;
+}
+.pane--table2 thead {
+  display: table-row;
+}
+
+.navigation {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 2rem;
+}
